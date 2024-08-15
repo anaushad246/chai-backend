@@ -2,9 +2,10 @@
   "name": "chai-backend",
   "version": "1.0.0",
   "description": "a backend on chai and code with hitesh sir",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config src/index.js"
   },
   "keywords": [
     "javascript",
@@ -12,8 +13,9 @@
   ],
   "author": "Learncode 246",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^3.1.4",
-    "prettier": "^3.3.3"
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
   }
 }
